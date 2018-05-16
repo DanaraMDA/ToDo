@@ -26,7 +26,8 @@ Released under the MIT license: http://jsbin.mit-license.org
 
 
 <script>
-  var todoList=[];
+ window.onload=function()
+ {var todoList=[];
 document.getElementById('add').onclick=function()
 {
   var temp={};
@@ -47,7 +48,7 @@ function out(){
 }  
   document.getElementById('out').innerHTML=out;
 }
-
+ }
 </script>
 
 </body>
