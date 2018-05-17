@@ -157,7 +157,7 @@ var temp = document.createElement("li"),
 li = document.getElementById(id).parentNode,
 old = li.getAttribute("timing"),
 end = new Date() - new Date(0)
-temp.innerText =li.innerText+ " Выполнено за - " + minutes(end -old )
+temp.innerText ="Задача "+li.innerText+ " выполнена за - " + minutes(end -old )
 l1.removeChild(li)
 l2.appendChild(temp)
 }
