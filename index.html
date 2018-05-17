@@ -124,6 +124,9 @@ udal = 0,
 vip =0
 
 bAdd.onclick = function(){
+if(innerT.value == "")
+{alert("Введите ваше дело!");}
+else  {
 var temp = document.createElement("li"),
 buttonDel = document.createElement("input")
 buttonDone = document.createElement("input"),
@@ -138,13 +141,13 @@ buttonDel.setAttribute("type","button")
 buttonDel.setAttribute("id","butDel"+ udal)
 buttonDel.setAttribute("onclick","remove(id)")
 udal=udal+1
-
 temp.innerText = innerT.value
 temp.setAttribute("timing", new Date()- new Date(0))
 temp.appendChild(buttonDone)
 temp.appendChild(buttonDel)
 l1.appendChild(temp)
 innerT.value =""
+}
 }
 
 function remove(id){
